@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+        <diagram id="page1" name="Alur 1: Input &amp; Survey Produk">
+            <mxGraphModel dx="1140" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+                <root>
+                    <mxCell id="0"/>
+                    <mxCell id="1" parent="0"/>
+                    
+            <mxCell id="steppage1_0" value="Supplier mendaftarkan diri dan menginput produk ke sistem" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="80" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+            <mxCell id="steppage1_1" value="Admin memilih produk dan menunjuk surveyor" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="180" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage1_1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage1_0" target="steppage1_1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage1_2" value="Surveyor menerima notifikasi tugas dan melakukan survei lapangan" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="280" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage1_2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage1_1" target="steppage1_2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage1_3" value="Surveyor mengirimkan hasil survei ke sistem" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="380" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage1_3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage1_2" target="steppage1_3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage1_4" value="Admin memutuskan: Produk diterima atau ditolak" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="480" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage1_4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage1_3" target="steppage1_4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage1_5" value="Supplier mendapat notifikasi hasil survei" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="580" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage1_5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage1_4" target="steppage1_5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                </root>
+            </mxGraphModel>
+        </diagram>
+        
+        <diagram id="page2" name="Alur 2: Negosiasi Harga &amp; PO">
+            <mxGraphModel dx="1140" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+                <root>
+                    <mxCell id="0"/>
+                    <mxCell id="1" parent="0"/>
+                    
+            <mxCell id="steppage2_0" value="Admin memulai proses negosiasi harga dengan supplier" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="80" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+            <mxCell id="steppage2_1" value="Negosiasi dilakukan melalui sistem hingga harga disepakati" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="180" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage2_1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage2_0" target="steppage2_1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage2_2" value="Admin membuat Purchase Order (PO)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="280" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage2_2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage2_1" target="steppage2_2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage2_3" value="Supplier menerima PO dan mengirimkan barang" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="380" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage2_3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage2_2" target="steppage2_3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage2_4" value="Supplier menerima pembayaran DP 50%" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="480" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage2_4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage2_3" target="steppage2_4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                </root>
+            </mxGraphModel>
+        </diagram>
+        
+        <diagram id="page3" name="Alur 3: Penerimaan &amp; Pembayaran">
+            <mxGraphModel dx="1140" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+                <root>
+                    <mxCell id="0"/>
+                    <mxCell id="1" parent="0"/>
+                    
+            <mxCell id="steppage3_0" value="Petugas gudang menerima barang dan update status" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="80" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+            <mxCell id="steppage3_1" value="Barang diperiksa kualitas dan kesesuaian" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="180" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage3_1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage3_0" target="steppage3_1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage3_2" value="Jika lolos QC, sisa pembayaran 50% dibayarkan ke supplier" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="280" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage3_2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage3_1" target="steppage3_2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+            <mxCell id="steppage3_3" value="Supplier mendapatkan poin atau bintang loyalitas" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxGeometry x="100" y="380" width="200" height="60" as="geometry"/>
+            </mxCell>
+            
+                <mxCell id="edgepage3_3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;" edge="1" parent="1" source="steppage3_2" target="steppage3_3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                </root>
+            </mxGraphModel>
+        </diagram>
+        </mxfile>

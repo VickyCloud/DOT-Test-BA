@@ -1,0 +1,76 @@
+Table Users {
+  id int [pk, increment]
+  name varchar
+  email varchar [unique]
+  password varchar
+  role enum('supplier', 'admin', 'surveyor', 'warehouse', 'direksi')
+  created_at datetime
+}
+
+Table Suppliers {
+  id int [pk, increment]
+  user_id int [ref: > Users.id]
+  company_name varchar
+  address text
+  points int
+  stars int
+}
+
+Table Products {
+  id int [pk, increment]
+  supplier_id int [ref: > Suppliers.id]
+  name varchar
+  description text
+  image_url varchar
+  status enum('pending', 'under_survey', 'accepted', 'rejected')
+  created_at datetime
+}
+
+Table Surveys {
+  id int [pk, increment]
+  product_id int [ref: > Products.id]
+  surveyor_id int [ref: > Users.id]
+  survey_date date
+  result text
+  status enum('submitted', 'evaluated')
+}
+
+Table Negotiations {
+  id int [pk, increment]
+  product_id int [ref: > Products.id]
+  admin_id int [ref: > Users.id]
+  offer_price decimal
+  response_price decimal
+  status enum('in_progress', 'agreed', 'cancelled')
+  updated_at datetime
+}
+
+Table PurchaseOrders {
+  id int [pk, increment]
+  product_id int [ref: > Products.id]
+  supplier_id int [ref: > Suppliers.id]
+  order_date date
+  total_price decimal
+  dp_paid boolean
+  final_paid boolean
+  status enum('created', 'delivered', 'received', 'completed')
+}
+
+Table Shipments {
+  id int [pk, increment]
+  po_id int [ref: > PurchaseOrders.id]
+  shipped_at datetime
+  received_at datetime
+  warehouse_officer_id int [ref: > Users.id]
+  quality_check_result text
+  status enum('pending', 'checked', 'rejected', 'approved')
+}
+
+Table LoyaltyPrograms {
+  id int [pk, increment]
+  supplier_id int [ref: > Suppliers.id]
+  transaction_id int [ref: > PurchaseOrders.id]
+  points_awarded int
+  stars_awarded int
+  created_at datetime
+}

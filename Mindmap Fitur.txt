@@ -1,0 +1,46 @@
+Procurement App Features
+    Supplier Module
+        Registrasi & Login
+        Input Produk (Data + Foto)
+        Lihat Status Produk
+        Lihat Hasil Survey
+        Negosiasi Harga
+        Riwayat Transaksi
+        Poin & Bintang Loyalitas
+
+    Admin Module
+        Login Admin
+        Manajemen Produk Masuk
+        Penunjukan Surveyor
+        Evaluasi Hasil Survey
+        Negosiasi Harga
+        Pembuatan PO
+        Manajemen Supplier
+        Dashboard Monitoring Transaksi
+        Manajemen Program Loyalitas
+
+    Surveyor Module
+        Login Surveyor
+        Notifikasi Tugas Survey
+        Input Hasil Survey
+        Riwayat Tugas Survey
+
+    Warehouse Module
+        Login Petugas Gudang
+        Update Status Penerimaan Barang
+        Input Jam Tiba Barang
+        Pemeriksaan Barang
+        Verifikasi Kesesuaian Barang
+
+    Direksi Module
+        Login Direksi
+        Lihat Laporan Transaksi
+        Lihat Ranking Supplier
+        Statistik Kualitas Produk
+
+    Sistem Pendukung
+        Notifikasi Otomatis
+        Tracking Status Barang
+        Sistem Poin/Bintang
+        Sistem Ranking Supplier
+        Backup & Keamanan Data

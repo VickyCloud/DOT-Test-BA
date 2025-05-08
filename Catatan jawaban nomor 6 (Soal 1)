@@ -1,0 +1,40 @@
+1. Mindmap Fitur
+Dasar Pemikiran:
+Penyusunan fitur dilakukan berdasarkan kebutuhan dari masing-masing aktor (supplier, admin, surveyor, warehouse, direksi) dan alur bisnis procurement yang telah dijabarkan sebelumnya. Modul dibagi agar setiap aktor memiliki ruang kerja dan fungsi yang jelas.
+
+Proses:
+Mindmap dibagi per modul utama, kemudian setiap modul dirinci menjadi fitur-fitur spesifik berdasarkan peran dan tanggung jawabnya.
+
+Hasil Analisa:
+Tercipta 6 modul utama dengan total lebih dari 25 fitur, mencakup input data, monitoring, transaksi, validasi lapangan, dan sistem loyalitas. Ini memudahkan proses breakdown tugas teknis ke dalam sprint pengembangan nantinya.
+
+2. Database Model (PDM/CDM)
+Dasar Pemikiran:
+Entity dan relasi disusun berdasarkan hubungan antara proses bisnis seperti: supplier menginput produk → disurvey → dinegosiasi → PO → pengiriman → verifikasi → loyalitas.
+
+Proses:
+Setiap proses utama diubah menjadi tabel dengan foreign key yang merepresentasikan keterkaitan antar entitas. Penggunaan enum dimaksudkan untuk menstandarkan status dalam alur proses.
+
+Hasil Analisa:
+Terdapat 8 tabel utama yang menggambarkan seluruh siklus procurement. Struktur ini cukup fleksibel untuk pengembangan lebih lanjut dan integrasi sistem loyalitas.
+
+3. Timeline & Mandays
+Dasar Pemikiran:
+Estimasi waktu dan SDM disusun berdasarkan kompleksitas fitur, jumlah platform yang dikembangkan (web & mobile), serta standar praktik agile dalam pengembangan aplikasi skala menengah.
+
+Proses:
+Proyek dibagi menjadi 9 tahap utama, dimulai dari requirement gathering hingga deployment. Jumlah tim dihitung berdasarkan rasio beban kerja tiap tahap dan estimasi realistis mandays.
+
+Hasil Analisa:
+Total estimasi mencapai ±64 hari kerja efektif, dengan komposisi tim: 1 PM, 1 System Analyst, 2 Backend Devs, 2 Frontend Devs, 2 Mobile Devs, dan 2 QA. Estimasi ini dapat dipakai untuk menyusun jadwal sprint atau resource plan.
+
+4. Flowchart & Activity Diagram
+Dasar Pemikiran:
+Diagram dibutuhkan untuk menjelaskan proses dari sudut pandang bisnis dan sistem secara ringkas dan visual agar memudahkan stakeholder non-teknis memahami alur aplikasi.
+
+Proses:
+Diagram dibuat berdasarkan urutan logis dari proses bisnis yang disampaikan. Proses bercabang (misalnya diterima vs ditolak) diberi jalur berbeda untuk memperjelas keputusan sistem.
+
+Hasil Analisa:
+Diagram berhasil memetakan seluruh alur mulai dari input produk sampai proses loyalitas. Ini akan membantu dalam penyusunan user flow dan struktur navigasi aplikasi nantinya.
+
